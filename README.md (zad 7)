@@ -1,0 +1,15 @@
+class ProjectManager extends Instructor {
+    constructor({ name, age, location, specialty, favLanguage, catchPhrase, gradClassName, favInstructor }) {
+        super({ name, age, location, specialty, favLanguage, catchPhrase });
+        this.gradClassName = gradClassName;
+        this.favInstructor = favInstructor;
+    }
+
+    standUp(channel) {
+        return `${this.name} announces to ${channel}, @channel standy time!`;
+    }
+
+    debugsCode(student, subject) {
+        return `${this.name} debugs ${student.name}'s code on ${subject}`;
+    }
+}
